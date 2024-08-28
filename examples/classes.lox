@@ -1,0 +1,41 @@
+class Breakfast {
+        cook() {
+                print "Eggs a-fryin!";
+        }
+
+        serve(who) {
+                print "Enjoy your breakfast, " + who + ".";
+        }
+}
+
+print Breakfast;
+class Bagel {}
+var bagel = Bagel();
+print bagel;
+var breakfast = Breakfast();
+breakfast.cook();
+
+class Egotist {
+        speak() {
+                print this;
+        }
+}
+
+var egotist = Egotist();
+var method = egotist.speak;
+method();
+
+class Builder {
+        init() {
+                this.a = 1;
+                this.b = 2;
+                this.c = "hi";
+        }
+
+        label() {
+                print this.c;
+        }
+}
+
+var builder = Builder();
+builder.label();
